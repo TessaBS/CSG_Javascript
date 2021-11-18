@@ -22,8 +22,8 @@ function draw() {
   triangle(100,325,200,325,150,250)
 
   noStroke();
-  // PAS ONDERSTAANDE REGEL AAN zodat de deur op de juiste plaats staat
   rect(120,375,30,50);
+  
   // teken de maan
   fill('khaki');
   // VERVANG DEZE REGEL door een regel die de maan tekent met een diameter van 150 en 25 vanaf de rand
