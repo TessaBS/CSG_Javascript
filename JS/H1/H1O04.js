@@ -6,21 +6,24 @@ function setup() {
 }
 
 function draw() {
-  // teken de grond
+
   noStroke();
-  fill('wheat');
-  rect(0,350,450,100);
+  fill(245, 222, 179);
+  rect(0,400,450,450);
+
   // teken het huis
+
   strokeWeight(4);
-  stroke('darkgrey');
-  fill('lightgray');
-  rect(100,280,100,100);
-  fill('gray');
-  // VERVANG DEZE REGEL door een regel die het dak tekent
-  // teken de deur
+  stroke(169, 169, 169);
+  fill(211, 211, 211);
+  rect(100,325,100,100);
+
+  fill(128, 128, 128);
+  triangle(100,325,200,325,150,250)
+
   noStroke();
   // PAS ONDERSTAANDE REGEL AAN zodat de deur op de juiste plaats staat
-  rect(10,10,30,50);
+  rect(120,375,30,50);
   // teken de maan
   fill('khaki');
   // VERVANG DEZE REGEL door een regel die de maan tekent met een diameter van 150 en 25 vanaf de rand
