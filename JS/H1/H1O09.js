@@ -14,8 +14,7 @@ function draw() {
   background('orange');
   fill('yellow');
   textAlign(LEFT, TOP);
-  text("mouseX:" + mouseX + "\nmouseY:" + mouseY,mouseX,mouseY);
-  translate(50,50);
+  text("mouseX:"+round(mouseX) + "\nmouseY:"+round(mouseY),mouseX,mouseY);  translate(50,50);
   fill('black');
   text("vensterGrootte:\n" + windowWidth + " x " + windowHeight,0,0);
   text("canvasGrootte:\n " + width + " x " + height,0,120);
