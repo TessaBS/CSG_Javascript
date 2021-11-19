@@ -13,9 +13,10 @@ function draw() {
   noStroke();
   translate(225,225);
   rect(0,0,200,200);
-  
+  push();
   rotate(45);
   rect(0,0,200,200);
-  
-  rect()
+  pop();
+  fill(255,225,0);
+  rect(0,0, 50, 50);
 }
