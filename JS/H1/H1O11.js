@@ -17,11 +17,13 @@ function draw() {
   fill('white');
   rect(0,0,width,40);
   fill('black');  
-  text("positie A = " + horizontaalA + " positie B = " + horizontaalB + "",10,30);
+  text("positie A = " + horizontaalA + " positie B = " + horizontaalB,10,30);
+  
   fill('dodgerblue');
   ellipse(horizontaalA,verticaal,200);
-  horizontaalA += 2;
+
   fill("darkred")
   ellipse(horizontaalB,verticaal,200);
-  horizontaalB = horizontaalB+1;
+  horizontaalA += 2;
+  horizontaalB++;
 }
