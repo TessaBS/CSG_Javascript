@@ -40,5 +40,6 @@ function draw() {
   tekenJos(xJOS,yJOS);
   translate(0,160);
   tekenJos(xJOS,yJOS);
-  xJOS= constrain()3;
+  xJOS += 3;
+  xJOS= constrain(xJOS,0,425)
 }
