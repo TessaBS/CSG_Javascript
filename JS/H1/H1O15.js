@@ -10,12 +10,6 @@ function setup() {
   fill('black');
 }
 
-function draw() {
-  background('lavender');
-  text("x = " + round(xJOS),10,20);
-  tekenJos(xJOS,yJOS);
-}
-
 function tekenJos(x,y) {
   push();
   translate(x,y);
@@ -36,4 +30,15 @@ function tekenJos(x,y) {
   fill('white');
   arc(0, 13, 26, 13, 0, PI, CHORD);
   pop();
+}
+
+function draw() {
+  background('lavender');
+  text("x = " + round(xJOS),10,20);
+  tekenJos(xJOS,yJOS);
+  translate(0,160);
+  tekenJos(xJOS,yJOS);
+  translate(0,160);
+  tekenJos(xJOS,yJOS);
+  xJOS= constrain()3;
 }
