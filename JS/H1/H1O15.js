@@ -1,4 +1,4 @@
-var xJOS = 225;
+var xJOS = 75;
 var yJOS = 75;
 
 function setup() {
