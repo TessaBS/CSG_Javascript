@@ -17,15 +17,19 @@ function draw() {
   translate(225,225);
   
   // tekenen rode bladeren
-  
-  fill(178, 34, 34,.7);
-  ellipse(0,0,400,50);
-  rotate(360 / aantal);
-
+  for( var n = 0; n < 17; n++){
+    fill(178, 34, 34,.7);
+    ellipse(0,0,400,50);
+    rotate(360 / 17);
+  }
   
   // gele vulkleur
-
-  fill(255, 195, 0,0.5);
+  for( var n = 0; n < 17; n++){
+    fill(255, 195, 0,0.5);
+    rect(0,0,75,75)
+    rotate(360 / 17)
+  }
+  
 
 
   if (keyIsDown(LEFT_ARROW) && aantal >= 2) {
