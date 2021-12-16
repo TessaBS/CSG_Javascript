@@ -18,9 +18,9 @@ function tekenTegel(x,y,s) {
   scale(s);
   translate(x,y);
   noStroke();
-  fill('rosybrown');
+  fill(242, 136, 136);
   triangle(0,0,25,25,50,0);  
-  fill('darkred');
+  fill(158, 184, 166);
   triangle(0,0,25,25,0,50);
   fill('rosybrown');
   triangle(0,50,25,25,25,50);
