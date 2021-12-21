@@ -21,10 +21,10 @@ function tekenTegel(x,y,s) {
   fill(242, 136, 136);
   triangle(0,0,25,25,50,0);  
   fill(158, 184, 166);
-  triangle(0,0,25,25,0,50);
+  triangle(50,50,25,25,50,0);
   fill('rosybrown');
-  triangle(0,50,25,25,25,50);
+  triangle(0,0,25,25,0,25);
   fill('palevioletred');
-  rect(25,25,25,25);
+  rect(0,25,25,25);
   pop();
 }
