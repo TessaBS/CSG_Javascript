@@ -19,12 +19,15 @@ function tekenTegel(x,y,s) {
   translate(x,y);
   noStroke();
   fill(242, 136, 136);
-  triangle(0,0,25,25,50,0);  
+  triangle(0,0,25,25,50,0); 
+  fill(255,255,255);
+  triangle(25,25,50,50,25,50); 
   fill(158, 184, 166);
-  triangle(50,50,25,25,50,0);
+  triangle(50,50,25,25,0,50);
   fill('rosybrown');
   triangle(0,0,25,25,0,25);
+  triangle(50,50,25,25,50,25);
   fill('palevioletred');
-  rect(0,25,25,25);
+  triangle(0,50,25,25,0,25);
   pop();
 }
