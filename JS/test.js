@@ -1,40 +1,42 @@
+var visX = 0
+var visY = 0
 
 function setup() {
-  canvas = createCanvas(900,450);
+  canvas = createCanvas(600,400);
   canvas.parent('processing');
-  noLoop();
-  noStroke();
+  frameRate(30);
+  background('lightblue');
 }
 
 function draw() {
-  background(230);
-  translate(0,50);
-  for(var kolom = 0; kolom<5; kolom +=1){
-    fill('yellow');
-    rect(25,-25,800,50);
-    C=random(9,12)
-    R = random(0,255)
-    G = random(0,255)
-    B = random(0,255)
-    push();
-    for(var x = 0; x<C; x +=1){
-    translate(50,0);
-    teamLid(R,G,B);
-    }
-    pop();
-    translate(0,75);
-  }
+  noStroke();
+  fill('lightblue');
+  rect(0,0,600,400);
+  fill('brown');
+  rect(0,350,600,50);
 
+  if(visX < 600){
+    if(visY < 400){
+      translate(visX,visY);
+      visX+= 2;
+      visY++;
+    }
+  }
+  visX = constrain(visX,0,475);
+  visY = constrain(visY,0,275)
+  for(n=0; n<3; n++){
+    scale(0.5);
+    tekenVis();
+  }
 }
 
-function teamLid(a,b,c) {
-  push();
-  fill(a,b,c);
-  ellipse(0,0,40);
-  stroke(4);
-  fill(0);
-  bezier(-10,15,5,0,10,0,15,10);
-  ellipse(-10,-5,10);
-  ellipse(10,-5,10);
-  pop();
+function tekenVis(){
+  if(mouseX < 300){
+    fill('red');
+  }
+  else{
+    fill('orange');
+  }
+  ellipse(100,100,50);
+  triangle(50,75,100,100,50,125);
 }
