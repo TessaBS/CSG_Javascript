@@ -15,9 +15,9 @@ function draw() {
   fill('black');  
   
   if (mouseX <= width / 2){
-    background('yellow')
+    background('pink')
   }
-  else if(mouseX >= width / 2){
+  else {
     background('white')
   }
 
@@ -27,7 +27,7 @@ function draw() {
   afstand=dist(mouseX,mouseY,225,225);
   text("Beweeg de muis | x = " + round(mouseX) + " en y = " + round(mouseY)+ " | afstand = " + round(afstand),10,20 );
   
-  if (mouseX >= width - 30 || mouseX <= 30 || mouseY <= 30 || mouseY >= height - 30 || afstand <= 50 / 2 + 100 / 2 + 5) {
+  if (mouseX >= width - 30 || mouseX <= 30 || mouseY <= 30 || mouseY >= height - 30 || afstand <= 50 / 2 + 100 / 2) {
     kleur='red';
   }
   else {
