@@ -9,8 +9,7 @@ function draw() {
       tekenTegel(kolom,rij,1);
     }
   }
-  translate(100,0);
-  tekenTegel(50,0,9);
+  tekenTegel(50 + 100 / 9,0,9);
 }
 
 function tekenTegel(x,y,s) {

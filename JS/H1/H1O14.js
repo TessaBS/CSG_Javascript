@@ -14,7 +14,7 @@ function draw() {
   background('lavender');
   fill('black');
   yJOS= yJOS - snelheidJOS;
-  snelheidJOS = snelheidJOS-0.5;
+  snelheidJOS -= 0.5;
 
   xJOS=constrain(xJOS,75,width-75);
   yJOS=constrain(yJOS,75,height-75);
